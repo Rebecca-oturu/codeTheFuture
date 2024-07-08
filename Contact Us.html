@@ -113,6 +113,13 @@
             font-size: 36px; 
         }
 
+        h4{
+            color: black;
+            margin-top: 0; 
+            font-size: 20px; 
+
+        }
+
         .content-section {
         background-color: #f9f9f9;
         padding: 40px;
@@ -142,6 +149,49 @@
         margin-bottom: 10px;
         line-height: 1.6;
        }
+
+
+       .content-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section form label {
+    font-weight: bold;
+}
+
+.content-section form input[type=text],
+.content-section form input[type=email],
+.content-section form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.content-section form textarea {
+    resize: vertical;
+}
+
+.content-section form button {
+    background-color: #2f04a6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.content-section form button:hover {
+    background-color: #555;
+}
+
         
     </style>
 </head>
@@ -167,24 +217,26 @@
         </nav>
     </header>
   
-    <div class="landing">
-        <h2>Transform Your Software Testing Approach</h2>
-        <p>Join TestRite Consulting and discover how we can optimize your QA engineering processes. Whether you're looking to enhance software quality or streamline test automation, we're here to help.</p>
-        <a href="Register.html" class="action-button">Get Started</a>
-    </div>
-
     <div class="content-section">
-        <h2>Welcome to TestRite Consultancy</h2>
-        <p>At TestRite Consultancy, we specialize in providing expert consultation services tailored to meet the unique needs of your company's QA engineering roles. Whether you're looking to establish robust QA processes from scratch or optimize existing frameworks, our seasoned consultants are here to support you every step of the way.</p>
-    
-        <h3>Why Choose TestRite Consultancy?</h3>
-        <ul>
-            <li><strong>Expertise:</strong> Our consultants bring years of hands-on experience in QA engineering across diverse industries.</li>
-            <li><strong>Customized Solutions:</strong> We tailor our solutions to fit your specific needs and challenges, ensuring optimal results.</li>
-            <li><strong>Proven Track Record:</strong> We have successfully helped numerous companies enhance their QA processes, achieving higher levels of quality and efficiency.</li>
-        </ul>
-    </div>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, please feel free to get in touch with us. We typically respond within 24 hours.</p>
+        <h4>  Phone Number :- +2348147728996</h4>
+        <h4>  Email Address :- Otururebecca@gmail.com</h4>
+        <h4> Office Address:- Broadway Avenue, Lagos State, Nigeria. </h4>
 
-  
+
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
